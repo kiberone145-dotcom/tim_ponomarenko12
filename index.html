@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Тимофей — Portfolio</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-text">Loading Portfolio...</div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-glow"></div>
+
+<!-- BACKGROUND CANVAS -->
+<canvas id="bg"></canvas>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content" data-parallax>
+    <h1 class="glow">Тимофей</h1>
+    <h2 class="typing"></h2>
+    <p>Junior Frontend & AI Developer</p>
+
+    <button class="btn" onclick="document.querySelector('#skills').scrollIntoView({behavior:'smooth'})">
+      Мои проекты
+    </button>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 class="section-title">Мои навыки и проекты</h2>
+
+  <div class="grid">
+
+    <div class="card reveal">
+      <div class="icon">⚙️</div>
+      <h3>Яндекс сервисы</h3>
+      <p>Работа с экосистемой Яндекс и сервисами.</p>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">🧩</div>
+      <h3>Tinkercad</h3>
+      <p>3D моделирование и инженерные проекты.</p>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">⛏️</div>
+      <h3>Minecraft Education</h3>
+      <p>Обучение через игровые механики и код.</p>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">🗣️</div>
+      <h3>Голосовой помощник</h3>
+      <p>Навык для Алисы и голосовые технологии.</p>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">📱</div>
+      <h3>Thunkable</h3>
+      <p>Создание мобильных приложений без кода.</p>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">🤖</div>
+      <h3>AI-инжиниринг</h3>
+      <p>Vibe Coding, нейросети и автоматизация.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section glass reveal">
+  <h2 class="section-title">Обо мне</h2>
+  <p>
+    Я изучаю программирование, AI и создание современных цифровых продуктов.
+    Мне нравится разрабатывать интерфейсы, игры и умные системы.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section class="section reveal">
+  <h2 class="section-title">Контакты</h2>
+
+  <div class="contacts">
+    <a href="#">Telegram</a>
+    <a href="#">GitHub</a>
+    <a href="#">Email</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Тимофей — Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
